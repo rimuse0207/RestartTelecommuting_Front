@@ -39,6 +39,7 @@ const Navigation = ({ menuStatus, setHambergerOpen }: Navigation) => {
     const [TeleMenuClicks, setTeleMenuClicks] = useState(true);
     const [OTMenuClicks, setOTMenuClicks] = useState(true);
     const [FoodMenuClicks, setFoodMenuClicks] = useState(true);
+    const [CeSupplyClicks, setCeSupplyClicks] = useState(true);
     const [ETCMenuClicks, setETCMenuClicks] = useState(true);
     const [onClicked, setOnClickedSet] = useState(false);
     const handleLogout = () => {
@@ -219,6 +220,29 @@ const Navigation = ({ menuStatus, setHambergerOpen }: Navigation) => {
                         )}
                     </div>
                     <div>
+                        <h5 onClick={() => setCeSupplyClicks(!CeSupplyClicks)} style={{ background: '#efefef', color: 'black' }}>
+                            CE지원메뉴
+                            <img
+                                src={'/pngegg.png'}
+                                className={`nav_handleClicks_arrow ${CeSupplyClicks ? 'nav_hadleClicks_flases' : ''}`}
+                            ></img>
+                        </h5>
+                        <ul>
+                            {CeSupplyClicks ? (
+                                <div className="slideDown">
+                                    <Link to="#" onClick={() => window.open('http://192.168.2.241:5551')}>
+                                        <li>CSM</li>
+                                    </Link>
+                                    <Link to="/Tool_Apply">
+                                        <li>Tool 대여 신청</li>
+                                    </Link>
+                                </div>
+                            ) : (
+                                <></>
+                            )}
+                        </ul>
+                    </div>
+                    <div>
                         <h5 onClick={() => setETCMenuClicks(!ETCMenuClicks)} style={{ background: '#efefef', color: 'black' }}>
                             기타메뉴
                             <img
@@ -235,9 +259,7 @@ const Navigation = ({ menuStatus, setHambergerOpen }: Navigation) => {
                                     <Link to="#" onClick={() => window.open('http://125.132.12.165:3332')}>
                                         <li>회의실 및 법인 예약</li>
                                     </Link>
-                                    <Link to="#" onClick={() => window.open('http://192.168.2.241:5551')}>
-                                        <li>CSM</li>
-                                    </Link>
+
                                     <Link to="#" onClick={() => window.open('http://192.168.0.145:8087')}>
                                         <li>ERP</li>
                                     </Link>

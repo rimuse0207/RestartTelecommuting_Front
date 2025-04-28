@@ -9,11 +9,24 @@ import axios from 'axios';
 export const request = axios.create({
     baseURL: process.env.REACT_APP_API_URL,
     headers: {
-        Authorization: sessionStorage.getItem('DHKS_TOKEN'),
+        // Authorization: sessionStorage.getItem('DHKS_TOKEN'),
         // Authorization: localStorage.getItem('Login_token'),
         id: localStorage.getItem('Login_id'),
     },
 });
+
+request.interceptors.request.use(
+    config => {
+        const token = sessionStorage.getItem('DHKS_TOKEN'); // 최신 Token 가져오기
+        if (token) {
+            config.headers.Authorization = sessionStorage.getItem('DHKS_TOKEN');
+        }
+        return config;
+    },
+    error => {
+        return Promise.reject(error);
+    }
+);
 
 export const Axios_Get_Moduls = async (Path_URL: string, Params_Data: any) => {
     try {

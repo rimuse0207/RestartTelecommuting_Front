@@ -30,6 +30,7 @@ import AccessInfoMainPage from './Components/AdminAcees/AdminAccess/AccessInfoMa
 import OtPersonPrinter from './Components/Modal/OTSpace/PersonPrinter/OtPersonPrinter';
 import MonthOtPersonShow from './Components/Modal/OTSpace/PersonPrinter/MonthOtPersonShow';
 import AdminAccessCheckingMainPage from './Components/AdminAcees/AdminAccessChecking/AdminAccessCheckingMainPage';
+import CeApplyMainPage from './Components/CeApply/CeApplyMainPage';
 
 const RouterPageMainDivBox = styled.div`
     @media print {
@@ -89,6 +90,11 @@ const RouterPage = () => {
                                     {/* 식대 정산 월별 조회 */}
                                     <Route path="/Admin_meal_Select" component={MealMonthSelect}></Route>
                                 </div>
+
+                                {/* CE지원 메뉴 */}
+                                {/* <div>
+                                    <Route exact path="/Tool_Apply" component={CeApplyMainPage}></Route>
+                                </div> */}
 
                                 {/* 기타메뉴 */}
                                 <div>

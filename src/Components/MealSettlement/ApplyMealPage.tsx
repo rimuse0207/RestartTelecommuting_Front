@@ -361,7 +361,7 @@ const ApplyMealPage = ({ pickerDate }: ApplyMealPageProps) => {
                                         <div>
                                             <h2>참고 사항.</h2>
                                             <div className="textEx">*출장 일당 지급일은 식대 지원대상에서 제외</div>
-                                            <div className="textEx">*식대지원 한도: 7,000원/1식</div>
+                                            <div className="textEx">*식대지원 한도: 8,000원/1식</div>
                                             <div className="textEx">*익월 3영업일 까지 등록 가능</div>
                                             <div className="textEx">*중식지원 제외 지역 (성남시)</div>
                                             <div className="textEx">*식대정산은 매월에 하나의 전표로 정산</div>

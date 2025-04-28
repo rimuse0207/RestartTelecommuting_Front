@@ -142,6 +142,10 @@ const UserDepartmentAccessTable = () => {
             indexs: 9,
             team_name: 'OEM',
         },
+        {
+            indexs: 10,
+            team_name: 'CE지원팀',
+        },
     ]);
 
     // 부서 권한 등록
