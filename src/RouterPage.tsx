@@ -31,6 +31,7 @@ import OtPersonPrinter from './Components/Modal/OTSpace/PersonPrinter/OtPersonPr
 import MonthOtPersonShow from './Components/Modal/OTSpace/PersonPrinter/MonthOtPersonShow';
 import AdminAccessCheckingMainPage from './Components/AdminAcees/AdminAccessChecking/AdminAccessCheckingMainPage';
 import CeApplyMainPage from './Components/CeApply/CeApplyMainPage';
+import OutOnBusinessMainPage from './Components/OutOnBusiness/OutOnBusinessMainPage';
 
 const RouterPageMainDivBox = styled.div`
     @media print {
@@ -110,6 +111,8 @@ const RouterPage = () => {
                                     <Route path="/NewDataInsert" component={NewAdminInsert}></Route>
                                     {/* 코로나19 */}
                                     {/* <Route path="/CovidTextShow" component={CovidTextShowMainPage}></Route> */}
+                                    {/* 해외출장 신청양식 */}
+                                    <Route path="/Out_On_Business" component={OutOnBusinessMainPage}></Route>
                                 </div>
 
                                 {/* <Route path="/PlayGround" component={PlayGround}></Route> */}

@@ -322,7 +322,7 @@ const ApplyMealPage = ({ pickerDate }: ApplyMealPageProps) => {
                                                 id="location"
                                             ></input>
                                         </USBCDApplyFormBoxDiv>
-                                        <USBCDApplyFormBoxDiv>
+                                        {/* <USBCDApplyFormBoxDiv>
                                             <div className="CElogs_WriteData_FORM_Text_label">동석자수</div>
                                             <div className="CElogs_WriteData_FORM_emoticon_div"></div>
 
@@ -347,7 +347,7 @@ const ApplyMealPage = ({ pickerDate }: ApplyMealPageProps) => {
                                                 placeholder="동석자의 모두의 이름"
                                                 id="names"
                                             ></input>
-                                        </USBCDApplyFormBoxDiv>
+                                        </USBCDApplyFormBoxDiv> */}
                                         <SubMitButton>
                                             <button type="submit" value="등록하기" onClick={Meal_sendData}>
                                                 저장 하기
@@ -418,8 +418,8 @@ const ApplyMealPage = ({ pickerDate }: ApplyMealPageProps) => {
                                                 금액
                                             </th>
                                             <th>방문처</th>
-                                            <th>동석자수</th>
-                                            <th>동석자명</th>
+                                            {/* <th>동석자수</th>
+                                            <th>동석자명</th> */}
                                             <th>지역</th>
                                             <th>비고</th>
                                             <th>삭제</th>
@@ -449,8 +449,8 @@ const ApplyMealPage = ({ pickerDate }: ApplyMealPageProps) => {
                                                         <td>{list.spending.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')}원</td>
                                                         <td>{list.calculate.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')}원</td>
                                                         <td>{list.place}</td>
-                                                        <td>{list.people}</td>
-                                                        <td>{list.names}</td>
+                                                        {/* <td>{list.people}</td>
+                                                        <td>{list.names}</td> */}
                                                         <td>{list.location}</td>
                                                         <td className="DISCO_PC_etc_width">
                                                             {OTDatas.map((item: { dates: string; OTTimes: number }, j) => {

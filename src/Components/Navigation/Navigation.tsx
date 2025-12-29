@@ -256,21 +256,21 @@ const Navigation = ({ menuStatus, setHambergerOpen }: Navigation) => {
                                     {/* <Link to="/ConnectedNow">
                                         <li>상대방 호출</li>
                                     </Link> */}
-                                    <Link to="#" onClick={() => window.open('http://125.132.12.165:3332')}>
+                                    <Link to="#" onClick={() => window.open('https://room.dhksolution.com')}>
                                         <li>회의실 및 법인 예약</li>
                                     </Link>
 
                                     <Link to="#" onClick={() => window.open('http://192.168.0.145:8087')}>
                                         <li>ERP</li>
                                     </Link>
-                                    <Link to="#" onClick={() => window.open('http://125.132.12.165:3332/PartyPost')}>
+                                    <Link to="#" onClick={() => window.open('https://room.dhksolution.com/PartyPost')}>
                                         <li>당직근무보고</li>
                                     </Link>
 
-                                    <Link to="#" onClick={() => window.open('http://125.132.12.165:3332/overseas')}>
-                                        <li>해외출장</li>
+                                    <Link to="/Out_On_Business">
+                                        <li>해외출장 신청 양식</li>
                                     </Link>
-                                    <Link to="#" onClick={() => window.open('http://125.132.12.165:3332/Document_Education')}>
+                                    <Link to="#" onClick={() => window.open('https://room.dhksolution.com/Document_Education')}>
                                         <li>DHKS 회계 전표 작성 안내 동영상</li>
                                     </Link>
 
@@ -360,7 +360,7 @@ const Navigation = ({ menuStatus, setHambergerOpen }: Navigation) => {
                                     {/* <Link to="#" onClick={() => window.open('http://125.132.12.163:3000')}>
                                         <li>시설이용</li>
                                     </Link> */}
-                                    <Link to="#" onClick={() => window.open('http://125.132.12.165:3332/PartyPost')}>
+                                    <Link to="#" onClick={() => window.open('https://room.dhksolution.com/PartyPost')}>
                                         <li>당직근무보고</li>
                                     </Link>
                                     {NavAccessTokenState.Nav_TeamLeaderCalendarAccess === 1 && InfomationState.company === 'YIKC' ? (
